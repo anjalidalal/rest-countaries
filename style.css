@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Mulish:wght@400;700&family=Nunito+Sans:wght@200;300;400;600;800&family=Poppins:wght@100;200;300;400;500;600;700&family=Raleway:wght@300;400;700&family=Splash&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+body {
+  background-color: hsl(0, 0%, 98%);
+  height: 100vh;
+}
+:root {
+  --elementBackgroundColor: hsl(0, 0%, 100%);
+  --borderRadius: 6px;
+  --marginPadding: 10px 20px;
+}
+
+.header-part-one,
+.search-bar,
+#filter-by-region {
+  background-color: var(--elementBackgroundColor);
+  box-shadow: 0px 1px 6px rgb(0 0 0 / 10%);
+}
+.header-part-one {
+  padding: 20px 10px;
+  font-size: 18px;
+  font-weight: 800;
+}
+.search-bar {
+  margin: var(--marginPadding);
+  border-radius: var(--borderRadius);
+  padding: var(--marginPadding);
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  color: #cccccc;
+  appearance: none;
+  outline: 0;
+}
+#filter-by-region {
+  border: none;
+  font-weight: 600;
+  height: 44px;
+  margin: 20px 20px 40px 20px;
+  padding: var(--marginPadding);
+  border-radius: var(--borderRadius);
+}
+option {
+  padding: 10px 20px;
+  font-weight: 600;
+}
+.flag-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px 6px 0px 0px;
+}
+.main-content {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.box-container-styles {
+  background-color: var(--elementBackgroundColor);
+  box-shadow: 0px 1px 6px rgb(0 0 0 / 10%);
+  width: 280px;
+  height: 330px;
+  border-radius: var(--borderRadius);
+}
+.content-box-styles {
+  padding: 25px 15px;
+}
+
+@media (min-width: 768px) {
+  .header-part-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  .box-container-styles {
+    width: 230px;
+    height: 330px;
+  }
+  .main-content {
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
